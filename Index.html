@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale">
+    <title>On Tech</title>
+    <link rel="icon" href="img/characteristics/download (3).webp"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Start Header -->
+    <header>  
+        <section class="container-fluid">
+            <div class="container d-flex align-items-center justify-content-between header-nav">
+                <div class="logo pt-2">
+                    <a href="Index.html#">OneTech</a>
+                </div>
+                <div class="logo-search d-flex justify-content-between align-items-center">
+                    <form class="d-none w-100 d-md-flex form-search border-2 border rounded-2" role="search">
+                        <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+                        <select class="w-50 form-control cat-select">
+                            <option value="All Categories">All Categories</option>
+                            <option value="Computers">Computers</option>
+                            <option value="Laptops">Laptops</option>
+                            <option value="Camerars">Camerars</option>
+                            <option value="Hardware">Hardware</option>
+                            <option value="Smartphones">Smartphones</option>
+                        </select>
+                        <button class="btn btn-search" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="do-fav d-flex align-items-center justify-content-end gap-4">
+                    <div class="wishlist d-flex gap-2 align-items-center justify-content-center">
+                        <a href="favorite.html">
+                            <div class="wish-img position-relative">
+                                <img src="img/wishlist_cart/download.webp" alt="">
+                                <div class="num-wish">0</div>
+                            </div>
+                        </a>
+                        <div class="wish-head-txt">
+                            <h6>Wishlist</h6>
+                        </div>
+                    </div>
+                    <div class="Cart d-flex gap-2 align-items-center justify-content-center">
+                        <a href="purchases.html">
+                            <div class="img-cart position-relative">
+                                <img src="img/wishlist_cart/download (4).webp" alt="">
+                                <div class="num-cart">0</div>
+                            </div>
+                        </a>
+                        <div class="wish-head-txt">
+                            <h6>Cart</h6>
+                            <small class="total-price">$ 0</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <!-- Start Navbar -->
+        <nav class="navbar nav-sticky position-sticky top-0 w-100 navbar-expand-lg z-3" id="spy">
+            <div class="container align-items-start">
+                <ul class="nav-item dropdown m-2">
+                    <a class="nav-link dropdown-toggle cat-pick fs-4 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars fs-4"></i> Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </ul>
+                <button class="navbar-toggler lh-base text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu &nbsp;
+                    <i class="fa-solid fa-xl fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse m-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#super">Super Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#newArrival">New Arrival</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#trends">Trends</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                <li><a class="dropdown-item" href="product.html">Product</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+        <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <main>
+        <!-- Start Section1 "landing" -->
+        <section class="landing pt-3 pb-5" id="home">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="info p-5 mt-3 ">
+                            <h1 class="text-uppercase fw-bolder fs-1">New Era Of Smartphones</h1>
+                            <div class="mt-5">
+                                <span class="text-decoration-line-through me-3 fs-3 fw-bold">$530</span>
+                                <span class="text-danger fs-3 fw-bold">$460</span>
+                            </div>
+                            <strong class="d-block mb-4">Apple Iphone 6s</strong>
+                            <button class="bg-primary text-white px-4 py-2 border-0 rounded-2"><a href="#"></a>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100" src="img/xbanner_product.png.pagespeed.ic.8YoeI51pih.webp" alt="">
+                    </div>                 
+                </div>
+            </div>
+        </section>
+        <!-- End Section1 "landing" -->
+        <!-- Start Section2 "Services" -->
+        <section class="Services pt-5 pb-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 ">
+                        <div class="Service shadow-lg w-100 d-flex p-3 m-1">
+                            <div class="icon">
+                                <img class="m-1 p-1" src="img/characteristics/download.webp" alt="">
+                            </div>
+                            <div class="text ps-3">
+                                <strong class="d-block">Free Delivery</strong>
+                                <small>from $50</small>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3  ">
+                        <div class="Service shadow-lg w-100 d-flex p-3 m-1">
+                            <div class="icon ">
+                                <img class="m-1 p-1" src="img/characteristics/download (1).webp" alt="">
+                            </div>
+                            <div class="text ps-3">
+                                <strong class="d-block">Free Delivery</strong>
+                                <small>from $50</small>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3   ">
+                        <div class="Service shadow-lg w-100 d-flex p-3 m-1">
+                            <div class="icon ">
+                                <img class="m-1 p-1" src="img/characteristics/download (2).webp" alt="">
+                            </div>
+                            <div class="text ps-3">
+                                <strong class="d-block">Free Delivery</strong>
+                                <small>from $50</small>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 ">
+                        <div class="Service shadow-lg w-100  d-flex p-3 m-1">
+                            <div class="icon ">
+                                <img class="m-1 p-1" src="img/characteristics/download (3).webp" alt="">
+                            </div>
+                            <div class="text ps-3">
+                                <strong class="d-block">Free Delivery</strong>
+                                <small>from $50</small>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- End Section2 "Services" -->
+        <!-- Start Section3 "Products" -->
+        <section class="Products pt-3 pb-5" id="super">
+            <div class="container P-4">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div id="carouselExampleIndicators" class="carousel slide shadow-lg p-4" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h5 class="fw-bold pb-4">Deals of the Week</h5>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>                                 
+                                    <div class="image">
+                                        <img src="img/deals-featured/xdeals.png.pagespeed.ic.nmhfwwkKMA.webp" class="d-block m-auto  pb-4" alt="headphone">
+                                    </div>               
+                                    <div class="info-image" >
+                                        <div class="info-image-1 d-flex justify-content-between mt-3 text-secondary">
+                                            <span>Head Phone</span>
+                                            <span >$300</span>
+                                        </div>
+                                        <div class="info-image-2 d-flex justify-content-between fs-5 fw-bold mb-3">
+                                            <span>Beoplay H7</span>
+                                            <span class="text-danger">$255</span>
+                                        </div>
+                                        <div class="info-image-3 d-flex justify-content-between">
+                                            <span>Available: <strong>6</strong></span>
+                                            <span>Already Sold: <strong>28</strong></span>
+                                        </div>
+                                        <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 25%;"></div>
+                                        </div>
+                                        <div class="info-image-4 d-flex justify-content-between">
+                                            <span class="fw-bold">Hurry Up</span>
+                                            <span >This Product not</span>
+                                        </div>
+                                        <div class="info-image-5 d-flex justify-content-between">
+                                            <span class="text-secondary">Offer ends in:</span>
+                                            <span >Available now.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="fw-bold pb-4">Deals of the Week</h5>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="image">
+                                        <img src="img/deals-featured/xdeals.png.pagespeed.ic.nmhfwwkKMA.webp" class="d-block m-auto pb-4" alt="headphone">
+                                    </div>               
+                                    <div class="info-image" >
+                                        <div class="info-image-1 d-flex justify-content-between mt-3 text-secondary">
+                                            <span>Head Phone</span>
+                                            <span >$300</span>
+                                        </div>
+                                        <div class="info-image-2 d-flex justify-content-between fs-5 fw-bold mb-3">
+                                            <span>Beoplay H7</span>
+                                            <span class="text-danger">$255</span>
+                                        </div>
+                                        <div class="info-image-3 d-flex justify-content-between">
+                                            <span>Available: <strong>6</strong></span>
+                                            <span>Already Sold: <strong>28</strong></span>
+                                        </div>
+                                        <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 25%;"></div>
+                                        </div>
+                                        <div class="info-image-4 d-flex justify-content-between">
+                                            <span class="fw-bold">Hurry Up</span>
+                                            <span >This Product not</span>
+                                        </div>
+                                        <div class="info-image-5 d-flex justify-content-between">
+                                            <span class="text-secondary">Offer ends in:</span>
+                                            <span >Available now.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <ul class="nav position-relative">
+                                <li class="nav-item-line">
+                                    <a class="nav-link text-dark p-2 "href="#">Featured</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">On Sale</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Best Rated</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="m-0">
+                        <div class="items mt-3">
+                            <div class="row g-0 ">
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 m-0 position-relative">
+                                        <div class="item-image pb-3 ">
+                                            <img src="img/trending/xview_4.jpg.pagespeed.ic.gcfPB3V9Wh.webp " alt="Smart Phone Huawei MediaPad">
+                                            <div class="sale">
+                                                <span>-25%</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$357</span>
+                                            <span class="d-block text-secondary"> <small>Smart Phone</small></span>
+                                            <a class="text-decoration-none" href="#">Huawei MediaPad</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>
+                                        
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2">
+                                        <div class="item-image pb-3">
+                                            <img src="img/deals-featured/xfeatured_3.png.pagespeed.ic.wmJbCYIZcx.webp" alt="Head Phone Sony MDRZX310W">
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$155</span>
+                                            <span class="d-block text-secondary"> <small>Head Phone</small></span>
+                                            <a class="text-decoration-none" href="#">Sony MDRZX310W</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2">
+                                        <div class="item-image pb-3">
+                                            <img src="img/deals-featured/xfeatured_6.png.pagespeed.ic.KkzNytvHVM.webp" alt="Smart Phone Samsung J330F">
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$477</span>
+                                            <span class="d-block text-secondary"> <small>Smart Phone</small></span>
+                                            <a class="text-decoration-none" href="#">Samsung J330F</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>
+                                        
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xreview_3.jpg.pagespeed.ic.c7PizLSOMV.webp" alt="Head Phone Transcend T.Sonic">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$255</span>
+                                            <span class="d-block text-secondary"> <small>Head Phone</small></span>
+                                            <a class="text-decoration-none" href="#">Transcend T.Sonic</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_2.jpg.pagespeed.ic.HKQA4qV2Mn.webp" alt="Ipod Beoplay">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$270</span>
+                                            <span class="d-block text-secondary"> <small>Ipod</small></span>
+                                            <a class="text-decoration-none" href="#">Beoplay</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>  
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-3 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_4.jpg.pagespeed.ic.YvShdYiv_G.webp" alt="Mouse Rapoo T8 White">
+                                            <div class="sale">
+                                                <span>-25%</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$65</span>
+                                            <span class="d-block text-secondary"> <small>Mouse</small></span>
+                                            <a class="text-decoration-none" href="#">Rapoo T8 White</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>                                        
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-3 m-0">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_8.jpg.pagespeed.ic.lAcp8-nlW0.webp " alt="Camera Canon EF">
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$320</span>
+                                            <span class="d-block text-secondary"> <small>Camera</small></span>
+                                            <a class="text-decoration-none" href="#">Canon EF</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>                                        
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-3 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_6.jpg.pagespeed.ic.K3dGMH41m4.webp " alt="Smart Phone LUNA">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$184</span>
+                                            <span class="d-block text-secondary"> <small>Smart Phone</small></span>
+                                            <a class="text-decoration-none" href="#">LUNA</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div>                                        
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>  
+                    </div>          
+                </div>
+            </div>
+        </section>
+        <!-- End Section3 "Products" -->
+        <!-- Start Section4 "categorys" -->
+        <section class="categorys pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2>Popular Categories</h2>
+                        <button type="button" class="btn btn-primary fw-bolder ">Full Categories</button>
+                    </div>
+                    <div class="col p-3">
+                        <div class="category text-center">
+                            <div class="category-image pb-2">
+                                <img src="img/category/xpopular_1.png.pagespeed.ic.iakLDOhA7r.webp" alt="">
+                            </div>
+                            <div
+                            class="category-info">
+                            <p>Smartphones <br> & Tablets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="category text-center">
+                            <div class="category-image pb-2">
+                                <img src="img/category/xpopular_2.png.pagespeed.ic.2dscQlBLuy.webp" alt="">
+                            </div>
+                            <div
+                            class="category-info">
+                            <p>Computers <br> & Laptops</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="category text-center">
+                            <div class="category-image pb-2">
+                                <img src="img/category/xpopular_3.png.pagespeed.ic.0uu5Dfk2Gh.webp" alt="">
+                            </div>
+                            <div
+                            class="category-info">
+                            <p>Gadgets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="category text-center">
+                            <div class="category-image pb-2">
+                                <img src="img/category/xpopular_4.png.pagespeed.ic.2oShzKU_RW.webp" alt="">
+                            </div>
+                            <div
+                            class="category-info">
+                            <p>Video Games <br> & Consoles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="category text-center">
+                            <div class="category-image pb-2">
+                                <img src="img/category/xpopular_5.png.pagespeed.ic.N9JFcEegtU.webp" alt="">
+                            </div>
+                            <div
+                            class="category-info">
+                            <p>Accessories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section4 "categorys" -->
+        <!-- Start Section5 "banner" -->
+        <section class="banner pt-5 pb-5">
+            <div class="container">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-4 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="left-info  p-4">
+                                        <span>Laptops</span>
+                                        <h2 class="fw-bold">MacBook Air 13</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</p>
+                                        <div class="stars d-flex justify-content-start align-items-center mb-2">
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-4 w-50 fw-bold">Explore</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 d-flex justify-content-center">
+                                    <div class="right">
+                                        <img src="img/xbanner_2_product.png.pagespeed.ic.26wMfooIqr.webp" alt="" class="img-fluid" style="max-width: 80%; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row g-4 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="left-info  p-4">
+                                        <span>Laptops</span>
+                                        <h2 class="fw-bold">MacBook Air 13</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</p>
+                                        <div class="stars d-flex justify-content-start align-items-center mb-2">
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star me-1"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-4 w-50 fw-bold">Explore</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 d-flex justify-content-center">
+                                    <div class="right">
+                                        <img src="img/xbanner_2_product.png.pagespeed.ic.26wMfooIqr.webp" alt="" class="img-fluid" style="max-width: 80%; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row g-4 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="left-info  p-4">
+                                        <span>Laptops</span>
+                                        <h2 class="fw-bold">MacBook Air 13</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</p>
+                                        <div>
+                                            <img src="img/star-3.webp" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-4 w-50 fw-bold">Explore</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 d-flex justify-content-center">
+                                    <div class="right">
+                                        <img src="img/xbanner_2_product.png.pagespeed.ic.26wMfooIqr.webp" alt="" class="img-fluid" style="max-width: 80%; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section5"banner" -->
+        <!-- Start Section6 "New-Arriva" -->
+        <section class="New-Arriva pt-5 pb-5" id="newArrival">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fw-bold">Hot New Arrival</h2>
+                            <ul class="nav position-relative">
+                                <li class="nav-item-line">
+                                    <a class="nav-link text-dark p-2 "href="#">Featured</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Audio & Video</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Laptops & Computers</a>
+                                </li>
+                            </ul>
+                        </div>                       
+                    </div>
+                </div>
+                <hr class="m-0"> 
+                <div class="row g-4">
+                    <div class="col-lg-9">
+                        <div class="items mt-3">
+                            <div class="row g-0 ">
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 m-0 position-relative">
+                                        <div class="item-image pb-3 ">
+                                            <img src="img/new-arrivals/xreview_3.jpg.pagespeed.ic.c7PizLSOMV.webp" alt="Head Phone">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$255</span>
+                                            <span class="d-block text-secondary"> <small>Head Phone</small></span>
+                                            <a class="text-decoration-none" href="#">Transcend T.Sonic</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_3.jpg.pagespeed.ic.5huJuP7Vcc.webp" alt="SmartWatch">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$155</span>
+                                            <span class="d-block text-secondary"> <small>SmartWatch</small></span>
+                                            <a class="text-decoration-none" href="#">Xiaomi Band 2...</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_5.jpg.pagespeed.ic.o6B80wnRBW.webp" alt="Casting headphones">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$477</span>
+                                            <span class="d-block text-secondary"> <small>Casting headphones</small></span>
+                                            <a class="text-decoration-none" href="#">Philips BT6900A</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_7.jpg.pagespeed.ic.CWzzc10GcH.webp" alt="Mouse">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$270</span>
+                                            <span class="d-block text-secondary"> <small>Mouse</small></span>
+                                            <a class="text-decoration-none" href="#">Rapoo 7100p Gray</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-2 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_2.jpg.pagespeed.ic.HKQA4qV2Mn.webp" alt="Ipod Beoplay">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$270</span>
+                                            <span class="d-block text-secondary"> <small>Ipod</small></span>
+                                            <a class="text-decoration-none" href="#">Beoplay</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-3 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_4.jpg.pagespeed.ic.YvShdYiv_G.webp" alt="Mouse Rapoo T8 White">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$65</span>
+                                            <span class="d-block text-secondary"> <small>Mouse</small></span>
+                                            <a class="text-decoration-none" href="#">Rapoo T8 White</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-3 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_8.jpg.pagespeed.ic.lAcp8-nlW0.webp " alt="Camera Canon EF">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$320</span>
+                                            <span class="d-block text-secondary"> <small>Camera</small></span>
+                                            <a class="text-decoration-none" href="#">Canon EF</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-6">
+                                    <div class="item pt-3 m-0 position-relative">
+                                        <div class="item-image pb-3">
+                                            <img src="img/new-arrivals/xnew_6.jpg.pagespeed.ic.K3dGMH41m4.webp " alt="Smart Phone LUNA">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-info text-center">
+                                            <span class="pric pb-3">$184</span>
+                                            <span class="d-block text-secondary"> <small>Smart Phone</small></span>
+                                            <a class="text-decoration-none" href="#">LUNA</a>
+                                        </div>
+                                        <div class="item-button pt-2">
+                                            <button class="addCartBtn text-white text-center">Add Cart</button>
+                                        </div> 
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="col-lg-3">
+                        <div class="card pt-3 position-relative">
+                            <div class="card-image">
+                                <img src="img/deals-featured/xfeatured_4.png.pagespeed.ic.ffUr_ZlXtN.webp" class="d-block m-auto pb-4" alt="phone">
+                                <div class="card-new">
+                                    <span>New</span>
+                                </div>
+                                <div class="love shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>               
+                            <div class="card-info pt-4">
+                                <span class="text-secondary"> <small>Smart Phone</small></span>
+                                <div class="info-card d-flex justify-content-between pt-2">
+                                    <a class="text-decoration-none" href="#">LUNA <br> Smartphone</a>
+                                    <span class="pric pb-3">$532</span>  
+                                </div>
+                                <div class="stars d-flex justify-content-start align-items-center mb-2">
+                                    <i class="fas fa-star me-1"></i>
+                                    <i class="fas fa-star me-1"></i>
+                                    <i class="fas fa-star me-1"></i>
+                                    <i class="fas fa-star me-1"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <button type="button" class="btn btn-primary w-75 mt-3"> <a href="#"></a>Add Cart</button>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </section> 
+        <!-- End Section6 "New-Arriva" -->
+        <!-- Start Section7 "best-seller" -->
+        <section class="best-seller pt-3 pb-5" id="best-seller">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fw-bold">Hot Best Seller</h2>
+                            <ul class="nav position-relative">
+                                <li class="nav-item-line">
+                                    <a class="nav-link text-dark p-2 "href="#">Featured</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">On Sale</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Best Rated</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="servers">
+                    <div class="row g-3">
+                        <div class="col-lg-4">
+                            <div class="server position-relative d-flex justify-content-lg-center justify-content-start align-items-center bg-white rounded-1 p-4 mt-4 w-100">
+                                <div class="image me-3">
+                                    <img class="w-100" src="img/best-seller/xbest_1.png.pagespeed.ic.Xl5pJgNFuc.webp" alt="phone">
+                                    <div class="sale">
+                                        <span>-25%</span>
+                                    </div>
+                                </div>
+                                <div class="server-info ">
+                                    <div class="item-info">
+                                        <span class="d-block text-secondary"> <small>Phone</small></span>
+                                        <a class="text-decoration-none fw-bold" href="#">Xiaomi Redmi <br> Note 4</a>
+                                    </div>
+                                    <div class="stars d-flex justify-content-start align-items-center mb-3">
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price d-flex">
+                                        <strong class="text-danger me-2 fw-bold">$355</strong>
+                                        <small class="text-decoration-line-through fw-bold">$450</small>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="server position-relative d-flex justify-content-lg-center justify-content-start align-items-center bg-white rounded-1 p-4 mt-4">
+                                <div class="image me-3">
+                                    <img class="w-100" src="img/best-seller/xbest_5.png.pagespeed.ic.HTKJQ0sBzB.webp" alt="SmartWatch">
+                                    <div class="sale">
+                                        <span>-25%</span>
+                                    </div>
+                                </div>
+                                <div class="server-info">
+                                    <div class="item-info">
+                                        <span class="d-block text-secondary"> <small>SmartWatch</small></span>
+                                        <a class="text-decoration-none fw-bold" href="#">Beoplay <br> H7</a>
+                                    </div>
+                                    <div class="stars d-flex justify-content-start align-items-center mb-3">
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price d-flex">
+                                        <strong class="text-danger me-2 fw-bold">$190</strong>
+                                        <small class="text-decoration-line-through fw-bold">$210</small>
+                                    </div>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="server position-relative d-flex justify-content-lg-center justify-content-start align-items-center bg-white rounded-1 p-4 mt-4">
+                                <div class="image me-3">
+                                    <img class="w-100" src="img/best-seller/xview_1.jpg.pagespeed.ic.c7PizLSOMV.webp" alt="Head Phone">
+                                    <div class="sale">
+                                        <span>-25%</span>
+                                    </div>
+                                </div>
+                                <div class="server-info">
+                                    <div class="item-info">
+                                        <span class="d-block text-secondary"> <small>Head Phone</small></span>
+                                        <a class="text-decoration-none fw-bold" href="#">Nomi Black <br> White</a>
+                                    </div>
+                                    <div class="stars d-flex justify-content-start align-items-center mb-3">
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price d-flex">
+                                        <strong class="text-danger me-2 fw-bold">$255</strong>
+                                        <small class="text-decoration-line-through fw-bold">$300</small>
+                                    </div>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="server position-relative d-flex justify-content-lg-center justify-content-start align-items-center bg-white rounded-1 p-4 mt-4">
+                                <div class="image me-3">
+                                    <img class="w-100" src="img/best-seller/xbest_2.png.pagespeed.ic.GT_naP4XUu.webp" alt="Headphone">
+                                </div>
+                                <div class="server-info">
+                                    <div class="item-info">
+                                        <span class="d-block text-secondary"> <small>Headphone</small></span>
+                                        <a class="text-decoration-none fw-bold" href="#">Samsung  <br> J730F...</a>
+                                    </div>
+                                    <div class="stars d-flex justify-content-start align-items-center mb-3">
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price d-flex">
+                                        <strong class="text-danger me-2 fw-bold">$95</strong>
+                                        <small class="text-decoration-line-through fw-bold">$120</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="server position-relative d-flex justify-content-lg-center justify-content-start align-items-center bg-white rounded-1 p-4 mt-4">
+                                <div class="image me-3">
+                                    <img class="w-100" src="img/best-seller/xview_3.jpg.pagespeed.ic.HLpVYh24-I.webp" alt="phone">
+                                </div>
+                                <div class="server-info">
+                                    <div class="item-info">
+                                        <span class="d-block text-secondary"> <small>Phone</small></span>
+                                        <a class="text-decoration-none fw-bold" href="#">Samsung Charm <br> Gold</a>
+                                    </div>
+                                    <div class="stars d-flex justify-content-start align-items-center mb-3">
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price d-flex">
+                                        <strong class="text-danger me-2 fw-bold">$477</strong>
+                                        <small class="text-decoration-line-through fw-bold">$550</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="server position-relative d-flex justify-content-lg-center justify-content-start align-items-center bg-white rounded-1 p-4 mt-4">
+                                <div class="image me-3">
+                                    <img class="w-100" src="img/best-seller/xview_4.jpg.pagespeed.ic.gcfPB3V9Wh.webp" alt="phone">
+                                    <div class="sale">
+                                        <span>-25%</span>
+                                    </div>
+                                </div>
+                                <div class="server-info">
+                                    <div class="item-info">
+                                        <span class="d-block text-secondary"> <small>Phone</small></span>
+                                        <a class="text-decoration-none fw-bold" href="#">Huawei MediaPad <br>T3</a>
+                                    </div>
+                                    <div class="stars d-flex justify-content-start align-items-center mb-3">
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star me-1"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price d-flex">
+                                        <strong class="text-danger me-2 fw-bold">$357</strong>
+                                        <small class="text-decoration-line-through fw-bold">$450</small>
+                                    </div>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section7 "best-seller" -->
+        <!-- Start Section8 "trending" -->
+        <section class="trending pt-5 pb-5" id="trends">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-lg-4">
+                        <div class="trend shadow-lg d-flex p-3 m-1">
+                            <div class="col">
+                                <div class="trend-text">
+                                    <h5>Trends 2018</h5>
+                                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</small></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="trend-image">
+                                    <img class="w-75 ms-4" src="img/trending/xadv_1.png.pagespeed.ic.ecBWb3SJqG.webp" alt="">
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="trend shadow-lg d-flex p-3 m-1">
+                            <div class="col">
+                                <div class="trend-text">
+                                    <h5>Trends 2018</h5>
+                                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</small></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="trend-image">
+                                    <img class="w-75 ms-4" src="img/trending/xadv_2.png.pagespeed.ic.JgJKs9KYy_.webp" alt="">
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="trend shadow-lg d-flex p-3 m-1">
+                            <div class="col">
+                                <div class="trend-text">
+                                    <h5>Trends 2018</h5>
+                                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</small></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="trend-image ">
+                                    <img class="w-75 ms-4" src="img/trending/xadv_3.png.pagespeed.ic.8YIssqGZh0.webp" alt="">
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section8 "trending" -->
+        <!-- Start Section9 "trends" -->
+        <section class="trends pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fw-bold">Trends in 2021</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="row g-2">
+                    <div class="multiple-items">
+                        <div class="col-lg-4">
+                            <div class="step p-3 position-relative">
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                                <button class="love-btn shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <img src="img/recently-viewed/xview_1.jpg.pagespeed.ic.c7PizLSOMV.webp" alt="">
+                                <div class="info mt-4">
+                                    <h6>Smartphone</h6>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <span>Jump White</span>
+                                        <span>$379</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="step p-3 position-relative">
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                                <button class="love-btn shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <img src="img/recently-viewed/xview_2.jpg.pagespeed.ic.C2lAFOmOFR.webp" alt="">
+                                <div class="info mt-4">
+                                    <h6>Smartphone</h6>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <span>Jump White</span>
+                                        <span>$379</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="step p-3 position-relative">
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                                <button class="love-btn shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <img src="img/trending/xtrends_2.jpg.pagespeed.ic.qX9onP8wVn.webp" alt="">
+                                <div class="info mt-4">
+                                    <h6> Smartphone</h6>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <span>Jump White</span>
+                                        <span>$379</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="step p-3 position-relative">
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                                <button class="love-btn shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <img src="img/best-seller/xbest_1.png.pagespeed.ic.Xl5pJgNFuc.webp" alt="">
+                                <div class="info mt-4">
+                                    <h6> Smartphone</h6>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <span>Jump White</span>
+                                        <span>$379</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="step p-3 position-relative">
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                                <button class="love-btn shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <img src="img/best-seller/xview_3.jpg.pagespeed.ic.HLpVYh24-I.webp" alt="">
+                                <div class="info mt-4">
+                                    <h6> Smartphone</h6>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <span>Jump White</span>
+                                        <span>$379</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="step p-3 position-relative">
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                                <button class="love-btn shadow-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <img src="img/trending/xtrends_2.jpg.pagespeed.ic.qX9onP8wVn.webp" alt="">
+                                <div class="info mt-4">
+                                    <h6> Smartphone</h6>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <span>Jump White</span>
+                                        <span>$379</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <!-- End Section9 "trends" -->
+        <!-- Start Section10 "latest-reviews" -->
+        <section class="latest-reviews pt-5 pb-5" id="latest-reviews">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fw-bold">Latest Reviews</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="row g-2">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="p-3 text-center">
+                                            <img src="img/recently-viewed/xview_1.jpg.pagespeed.ic.c7PizLSOMV.webp" alt="">
+                                            <div class="info mt-3">
+                                                <h3 class="h6 fw-bold">Beoplay H4</h3>
+                                                <div class="stars d-flex justify-content-center align-items-center mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="text-black ms-2">2 days ago</span>
+                                                </div>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi consectetur ducimus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="p-3 text-center">
+                                            <img src="img/recently-viewed/xview_2.jpg.pagespeed.ic.C2lAFOmOFR.webp" alt="">
+                                            <div class="info mt-3">
+                                                <h3 class="h6 fw-bold">LUNA Smartphone</h3>
+                                                <div class="stars d-flex justify-content-center align-items-center mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="text-black ms-2">2 days ago</span>
+                                                </div>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi consectetur ducimus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="p-3 text-center">
+                                            <img src="img/recently-viewed/xview_3.jpg.pagespeed.ic.HLpVYh24-I.webp" alt="">
+                                            <div class="info mt-3">
+                                                <h3 class="h6 fw-bold">Samsung J730F</h3>
+                                                <div class="stars d-flex justify-content-center align-items-center mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="text-black ms-2">2 days ago</span>
+                                                </div>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi consectetur ducimus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="p-3 text-center">
+                                            <img src="img/recently-viewed/xview_4.jpg.pagespeed.ic.gcfPB3V9Wh.webp" alt="">
+                                            <div class="info mt-3">
+                                                <h3 class="h6 fw-bold">Huawei MediaPad</h3>
+                                                <div class="stars d-flex justify-content-center align-items-center mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="text-black ms-2">2 days ago</span>
+                                                </div>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi consectetur ducimus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="p-3 text-center">
+                                            <img src="img/recently-viewed/xview_5.jpg.pagespeed.ic.LXZD3f2D0h.webp" alt="">
+                                            <div class="info mt-3">
+                                                <h3 class="h6 fw-bold">Sony PS4 Slim</h3>
+                                                <div class="stars d-flex justify-content-center align-items-center mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="text-black ms-2">2 days ago</span>
+                                                </div>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi consectetur ducimus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="p-3 text-center">
+                                            <img src="img/recently-viewed/xview_6.jpg.pagespeed.ic.A0_NjsZwto.webp" alt="">
+                                            <div class="info mt-3">
+                                                <h3 class="h6 fw-bold">Speedlink</h3>
+                                                <div class="stars d-flex justify-content-center align-items-center mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="text-black ms-2">2 days ago</span>
+                                                </div>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi consectetur ducimus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>      
+        <!-- End Section10 "latest-reviews" -->
+        <!-- Start Section11 "Recently Vieweds" -->
+        <section class="recently-viewed pt-5 pb-5" id="recently-viewed">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fw-bold">Recently Viewed</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="row g-2">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex">
+                                    <div class="col">
+                                        <div class="card p-3">
+                                            <div class="sale">
+                                                <span>-25%</span>
+                                            </div>
+                                            <img src="img/recently-viewed/xview_1.jpg.pagespeed.ic.c7PizLSOMV.webp" alt="" class="img-fluid">
+                                            <div class="info mt-4">
+                                                <div class="price d-flex justify-content-center flex-column align-items-center">
+                                                    <div>
+                                                        <span class="text-danger">$250</span>
+                                                        <span class="offer text-secondary text-decoration-line-through">$300</span>
+                                                    </div>
+                                                    <a href="#">Huawei MediaPad</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card p-3">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <img src="img/recently-viewed/xview_2.jpg.pagespeed.ic.C2lAFOmOFR.webp" alt="" class="img-fluid">
+                                            <div class="info mt-4">
+                                                <div class="price d-flex justify-content-center flex-column align-items-center">
+                                                    <span>$250</span>
+                                                    <a href="#">Samsung J730F</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card p-3">
+                                            <div class="sale">
+                                                <span>-25%</span>
+                                            </div>
+                                            <img src="img/recently-viewed/xview_3.jpg.pagespeed.ic.HLpVYh24-I.webp" alt="" class="img-fluid">
+                                            <div class="info mt-4">
+                                                <div class="price d-flex justify-content-center flex-column align-items-center">
+                                                    <div>
+                                                        <span class="text-danger">$250</span>
+                                                        <span class="offer text-secondary text-decoration-line-through">$300</span>
+                                                    </div>
+                                                    <a href="#">Samsung J730F</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card p-3">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <img src="img/recently-viewed/xview_4.jpg.pagespeed.ic.gcfPB3V9Wh.webp" alt="" class="img-fluid">
+                                            <div class="info mt-4">
+                                                <div class="price d-flex justify-content-center flex-column align-items-center">
+                                                    <span>$250</span>
+                                                    <a href="#">Samsung J730F</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card p-3">
+                                            <div class="sale">
+                                                <span>-25%</span>
+                                            </div>
+                                            <img src="img/recently-viewed/xview_5.jpg.pagespeed.ic.LXZD3f2D0h.webp" alt="" class="img-fluid">
+                                            <div class="info mt-4">
+                                                <div class="price d-flex justify-content-center flex-column align-items-center">
+                                                    <div>
+                                                        <span class="text-danger">$250</span>
+                                                        <span class="offer text-secondary text-decoration-line-through">$300</span>
+                                                    </div>
+                                                    <a href="#">Samsung J730F</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card p-3">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <img src="img/recently-viewed/xview_6.jpg.pagespeed.ic.A0_NjsZwto.webp" alt="" class="img-fluid">
+                                            <div class="info mt-4">
+                                                <div class="price d-flex justify-content-center flex-column align-items-center">
+                                                    <span>$250</span>
+                                                    <a href="#">Samsung J730F</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section11 "Recently Vieweds" -->
+        <!-- Start Section12 "Brand" -->
+        <section class="brand pt-5 pb-5" id="brand">
+            <div class="container carousel-container">
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-around">
+                                <img src="img/brand/xbrands_1.jpg.pagespeed.ic.1nM7wgM6yq.webp" alt="brand 1">
+                                <img src="img/brand/xbrands_2.jpg.pagespeed.ic.aGWd17n_6c.webp" alt="brand 2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <img src="img/brand/xbrands_2.jpg.pagespeed.ic.aGWd17n_6c.webp" alt="brand 3">
+                                <img src="img/brand/xbrands_3.jpg.pagespeed.ic.qRuw2zePgn.webp" alt="brand 4">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <img src="img/brand/xbrands_3.jpg.pagespeed.ic.qRuw2zePgn.webp" alt="brand 3">
+                                <img src="img/brand/xbrands_4.jpg.pagespeed.ic.XORj7-7yxR.webp" alt="brand 4">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <img src="img/brand/xbrands_4.jpg.pagespeed.ic.XORj7-7yxR.webp" alt="brand 3">
+                                <img src="img/brand/xbrands_5.jpg.pagespeed.ic.ugJTUVZ99O.webp" alt="brand 4">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <img src="img/brand/xbrands_5.jpg.pagespeed.ic.ugJTUVZ99O.webp" alt="brand 3">
+                                <img src="img/brand/xbrands_6.jpg.pagespeed.ic.YeinomSK6w.webp" alt="brand 4">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>   
+        <!-- End Section12 "Brand" -->      
+        <!-- Start Section13 "Subscribe" -->
+        <section  class="subscribe pt-5 pb-5" id="subscribe">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-lg-4">
+                        <div class="ite d-flex justify-content-center">
+                                <div class="img-sub me-4">
+                                    <img src="img/telegram.webp" alt="">
+                                </div>
+                                <div class="text-sub">
+                                    <h3 class="h5 fw-bold">Sign up for Newsletter</h3>
+                                    <p class="mb-0">...and receive %20 coupon for first shopping.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <form id="subscrib_form" class="d-flex">
+                            <input id="userSubEmail" class="form-control" type="email" name="userSubEmail" placeholder="Enter Your Email Adress">
+                            <a button id="btnSubEmail" class="btn text-white btn-info " type="submit" disabled="">Subscribe</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section13 "Subscribe" -->
+        <!-- Start Footer -->
+        <footer class="pt-5 pb-5" id="contact">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <div class="ite">
+                            <div class="logo mb-4">
+                                <a href="#">OneTech</a>
+                            </div>
+                            <div class="footer_title mb-2">Got Question? Call Us 24/7</div>
+                            <div class="footer_phone mb-2">+38 068 005 3570</div>
+                            <div class="footer_email mb-2">naglaa.hassan365@gmail.com</div>
+                            <div class="footer_contact_text mb-3">17 Princess Road, London Grester London NW18JR, UK</div>
+                            <div class="footer_social d-flex">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <div class="ite">
+                            <h3 class="h6 mb-3 fw-bold">Find it Fast</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Computers &amp; Laptops</a></li>
+                                <li><a href="#">Cameras &amp; Photos</a></li>
+                                <li><a href="#">Hardware</a></li>
+                                <li><a href="#">Smartphones &amp; Tablets</a></li>
+                                <li><a href="#">TV &amp; Audio</a></li>
+                                <li><a href="#">Gadgets</a></li>
+                                <li><a href="#">Car Electronics</a></li>
+                                <li><a href="#">Video Games &amp; Consoles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ite">
+                            <h3 class="h6 mb-3 fw-bold">Customer Care</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Customer Services</a></li>
+                                <li><a href="#">Returns / Exchange</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Product Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- Start Copyright  -->
+        <div class="copyright py-3">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-8">
+                        <p class="mb-0">Copyright ©2021 All rights reserved | This template is made by <a class="triple" href="https://omokhtar407.github.io/E-commerce/index.html#">Triple-O</a> </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pay">
+                            <ul class="list-unstyled d-flex justify-content-md-end mb-0 ">
+                                <li><a href="#" class="me-3"><img src="img/footer/footer1.webp" alt=""></a></li>
+                                <li><a href="#" class="me-3"><img src="img/footer/footer2.webp" alt=""></a></li>
+                                <li><a href="#" class="me-3"><img src="img/footer/footer3.webp" alt=""></a></li>
+                                <li><a href="#"><img src="img/footer/footer4.webp" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright  -->
+    </main>
+    <!-- End Main -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="path/to/your/cart-script.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>   
+</html>
