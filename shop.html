@@ -29,26 +29,40 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#spy" data-bs-offset="" data-bs-smooth-scroll="true">
+  <!-- For Loading Screen -->
+  <div class="loading d-flex justify-content-center align-items-center">
+    <div id="spinner" class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+  <!-- End Loading -->
+
   <!-- Header Static Nav -->
   <header class="container-fluid">
-    <div class="container d-flex align-items-center justify-content-between header-nav">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between header-nav py-1">
       <a class="navbar-brand" href="index.html">E-Commerce</a>
-      <div class="logo-search d-flex justify-content-between align-items-center">
-        <form class="d-none w-100 d-md-flex form-search border-2 border rounded-2" role="search">
-          <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search" />
-          <select class="w-50 form-select ">
+      <div class="logo-search d-flex justify-content-between align-items-center my-3 my-md-0">
+        <form class="d-none d-md-flex form-search border-2 border rounded-2 w-100" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+          <select class="form-select">
             <option value="1">All Categories</option>
             <option value="2">Men's Fashion</option>
             <option value="3">Women's Fashion</option>
             <option value="4">Electronics</option>
           </select>
-
           <button class="btn btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
-
       <div class="do-fav d-flex align-items-center justify-content-end gap-4">
         <div class="wishlist d-flex gap-2 align-items-center justify-content-center">
           <a href="./wish.html">
@@ -58,7 +72,7 @@
             </div>
           </a>
           <div class="wish-head-txt">
-            <h6>Wishlist</h6>
+            <h6 class="mb-0">Wishlist</h6>
           </div>
         </div>
         <div class="Cart d-flex gap-2 align-items-center justify-content-center">
@@ -69,7 +83,7 @@
             </div>
           </a>
           <div class="wish-head-txt">
-            <h6>Cart</h6>
+            <h6 class="mb-1">Cart</h6>
             <small class="total-price"></small>
           </div>
         </div>
@@ -105,7 +119,7 @@
       <div class="collapse navbar-collapse m-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link text-white " aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" aria-current="page" href="index.html#super">Super Deals</a>
@@ -123,14 +137,19 @@
               <li><a class="dropdown-item" href="cart.html">Cart</a></li>
               <li><a class="dropdown-item" href="wish.html">WishList</a></li>
               <li><a class="dropdown-item active" href="shop.html">shop</a></li>
+
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="#">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
           </li>
+          <button id="signupBtn" class="btn btn-light mx-2">
+            <a href="Signup.html">SignUp</a>
+          </button>
+          <button id="signinBtn" class="btn btn-light mx-2">
+            <a href="Signin.html">Login</a>
+          </button>
+          <button id="signoutBtn" class="btn btn-light mx-2">Logout</button>
         </ul>
       </div>
     </div>
@@ -186,18 +205,6 @@
               <!-- <span class="text-info me-1">56</span>
                           products -->
             </div>
-
-            <!-- <div class="shop_sorting position-relative d-flex">
-                          <span>sort by :</span>
-                          <ul class="shop_sorting_list list-unstyled mb-0">
-                              <li><span class="mx-2">highest rated</span><i class="fas fa-angle-down"></i></li>
-                              <ul class="filter-condition custom_list list-unstyled shadow mb-0">
-                                  <li><a href="#">highest rated</a></li>
-                                  <li><a href="#">name</a></li>
-                                  <li><a href="#">price</a></li>
-                              </ul>
-                          </ul>
-                      </div> -->
           </div>
           <hr>
 
@@ -245,22 +252,7 @@
   <img src="./imgs/Toshiba.png" alt="" />
    -->
 
-  <!-- <div class="logos">
-    <div class="logos-slide">
-      <img src="./imgs/addidas.png" alt="" />
-  <img src="./imgs/puma.png" alt="" />
-  <img src="./imgs/canon.png" alt="" />
-  <img src="./imgs/defacto.png" alt="" />
-  <img src="./imgs/lc-waikiki.png" alt="" />
-  <img src="./imgs/dell.png" alt="" />
-  <img src="./imgs/sony.png" alt="" />
-  <img src="./imgs/samsung.png" alt="" />
-  <img src="./imgs/lenovo.png" alt="" />
-  <img src="./imgs/Toshiba.png" alt="" />
-    </div>
-  </div> -->
-
-  <div class="row">
+  <!-- <div class="row">
     <div class="container">
       <section class="customer-logos slider" data-arrows="true">
         <img src="./imgs/addidas.png" alt="" />
@@ -276,8 +268,56 @@
       </section>
     </div>
   </div>
+ -->
 
+  <!-- Brands Section -->
+  <section id="brands" class="brands py-5">
+    <div class="container">
+      <div class="brands-container">
+        <ul class="brands-flex">
+          <li>
+            <img src="./imgs/addidas.png" alt="" class="w-50" />
+          </li>
+          <li>
+            <img src="./imgs/puma.png" alt="" class="w-50" />
 
+          </li>
+          <li>
+            <img src="./imgs/canon.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/defacto.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/lc-waikiki.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/dell.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/sony.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/samsung.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/lenovo.png" alt="" class="w-50" />
+
+          </li>
+          <li>
+            <img src="./imgs/Toshiba.png" alt="" class="w-50" />
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- Start Section13 "Subscribe" -->
   <section class="subscribe pt-5 pb-5" id="subscribe">
@@ -307,7 +347,7 @@
   </section>
   <!-- End Section13 "Subscribe" -->
   <!-- Start Footer -->
-  <footer class="pt-5 pb-5" id="contact">
+  <footer class="py-5" id="contact">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-5">
@@ -319,7 +359,7 @@
             <div class="footer_phone mb-2">+38 068 005 3570</div>
             <div class="footer_email mb-2">MohamedBehairy@gmail.com</div>
             <div class="footer_contact_text mb-3">17 Princess Road, London Grester London NW18JR, UK</div>
-            <div class="footer_social d-flex">
+            <div class="footer_social ">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-youtube"></i></a>
@@ -373,27 +413,27 @@
     </div>
   </footer>
   <!-- End Footer -->
- <!-- Start Copyright  -->
- <div class="copyright py-3">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-8">
-        <p class="mb-0">Copyright ©2021 All rights reserved</p>
-      </div>
-      <div class="col-md-4">
-        <div class="pay">
-          <ul class="list-unstyled d-flex justify-content-md-end mb-0 footimg">
-            <li><a href="#" class="me-3"><img src="img/footer/footer1.webp" alt=""></a></li>
-            <li><a href="#" class="me-3"><img src="img/footer/footer2.webp" alt=""></a></li>
-            <li><a href="#" class="me-3"><img src="img/footer/footer3.webp" alt=""></a></li>
-            <li><a href="#"><img src="img/footer/footer4.webp" alt=""></a></li>
-          </ul>
+  <!-- Start Copyright  -->
+  <div class="copyright py-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-8">
+          <p class="mb-0">Copyright ©2021 All rights reserved</p>
+        </div>
+        <div class="col-md-4">
+          <div class="pay">
+            <ul class="list-unstyled d-flex justify-content-md-end mb-0 footimg">
+              <li><a href="#" class="me-3"><img src="img/footer/footer1.webp" alt=""></a></li>
+              <li><a href="#" class="me-3"><img src="img/footer/footer2.webp" alt=""></a></li>
+              <li><a href="#" class="me-3"><img src="img/footer/footer3.webp" alt=""></a></li>
+              <li><a href="#"><img src="img/footer/footer4.webp" alt=""></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- End Copyright  -->
+  <!-- End Copyright  -->
 
   <script src="js/popper.min.js"></script>
   <script src="js/jquery-3.7.1.min.js"></script>

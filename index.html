@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -29,26 +29,40 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#spy" data-bs-offset="" data-bs-smooth-scroll="true">
+  <!-- For Loading Screen -->
+  <div class="loading d-flex justify-content-center align-items-center">
+    <div id="spinner" class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+  <!-- End Loading -->
+
   <!-- Header Static Nav -->
   <header class="container-fluid">
-    <div class="container d-flex align-items-center justify-content-between header-nav">
-      <a class="navbar-brand" href="index.html">E-commerce</a>
-      <div class="logo-search d-flex justify-content-between align-items-center">
-        <form class="d-none w-100 d-md-flex form-search border-2 border rounded-2" role="search">
-          <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search" />
-          <select class="w-50 form-select ">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between header-nav py-1">
+      <a class="navbar-brand" href="index.html">E-Commerce</a>
+      <div class="logo-search d-flex justify-content-between align-items-center my-3 my-md-0">
+        <form class="d-none d-md-flex form-search border-2 border rounded-2 w-100" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+          <select class="form-select">
             <option value="1">All Categories</option>
             <option value="2">Men's Fashion</option>
             <option value="3">Women's Fashion</option>
             <option value="4">Electronics</option>
           </select>
-
           <button class="btn btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
-
       <div class="do-fav d-flex align-items-center justify-content-end gap-4">
         <div class="wishlist d-flex gap-2 align-items-center justify-content-center">
           <a href="./wish.html">
@@ -58,7 +72,7 @@
             </div>
           </a>
           <div class="wish-head-txt">
-            <h6>Wishlist</h6>
+            <h6 class="mb-0">Wishlist</h6>
           </div>
         </div>
         <div class="Cart d-flex gap-2 align-items-center justify-content-center">
@@ -69,7 +83,7 @@
             </div>
           </a>
           <div class="wish-head-txt">
-            <h6>Cart</h6>
+            <h6 class="mb-1">Cart</h6>
             <small class="total-price"></small>
           </div>
         </div>
