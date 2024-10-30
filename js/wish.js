@@ -122,17 +122,11 @@ acceptUnFavAll.addEventListener("click", () => {
   alert("Clear Done");
   clearWish();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
+// loading
+$('#spinner').fadeOut(1000 ,() => {
+  $('#spinner').parent().fadeOut(2000 , ( ) => {
+      $('.loading').remove();
+      $('body').css( "overflow-y","auto" );
+  }) 
+});
 

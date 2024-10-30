@@ -5,7 +5,6 @@ const messageBox = document.getElementById('messageBox');
 if (signinForm) {
     signinForm.addEventListener('submit', function(event) {
         event.preventDefault(); 
-
         const email = document.getElementById('inputEmail').value;
         const password = document.getElementById('inputPassword').value;
         const data = {

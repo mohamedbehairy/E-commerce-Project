@@ -48,7 +48,7 @@ if (signupForm) {
 
         if (fieldId === 'inputRePassword') {
             if (formData.rePassword !== formData.password) {
-                document.getElementById('rePasswordError').textContent = "كلمة المرور لا تتطابق";
+                document.getElementById('rePasswordError').textContent = "Password does not match";
             } else {
                 document.getElementById('rePasswordError').textContent = '';
             }
@@ -63,34 +63,34 @@ function validateForm(data) {
     // Validate name
     if (!data.name) {
     } else if (data.name.length < 3 || data.name.length > 10) {
-        errors.name = "يجب أن يكون الاسم بين 3 و 10 أحرف";
+        errors.name = "Name must be between 3 and 10 characters long";
     }
 
     // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!data.email) {
     } else if (!emailRegex.test(data.email)) {
-        errors.email = "بريد إلكتروني غير صالح";
+        errors.email = "Invalid email address";
     }
 
     // Validate password
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@#])[A-Za-z\d@#]{6,}$/;
     if (!data.password) {
     } else if (!passwordRegex.test(data.password)) {
-        errors.password = "يجب أن تحتوي كلمة المرور على حرف كبير، ورقم، ورمز (@ أو #) و 6 أحرف على الأقل";
+        errors.password = "Password must contain at least one uppercase letter, one number and one special character";
     }
 
     // Validate rePassword
     if (!data.rePassword) {
     } else if (data.rePassword !== data.password) {
-        errors.rePassword = "كلمة المرور لا تتطابق";
+        errors.rePassword = "Password does not match";
     }
 
     // Validate phone
     const phoneRegex = /^(010|011|012|015)[0-9]{8}$/;
     if (!data.phone) {
     } else if (!phoneRegex.test(data.phone)) {
-        errors.phone = "رقم الهاتف غير صالح، يجب أن يبدأ بـ (010|011|012|015) ويحتوي على 11 رقم";
+        errors.phone = "The phone number is invalid, it must start with (010|011|012|015) and contain 11 digits";
     }
 
     return errors;

@@ -122,3 +122,10 @@ acceptPay.addEventListener("click", () => {
   alert("Pay Done");
   resetCart();
 });
+// loading
+$('#spinner').fadeOut(1000 ,() => {
+  $('#spinner').parent().fadeOut(2000 , ( ) => {
+      $('.loading').remove();
+      $('body').css( "overflow-y","auto" );
+  }) 
+});
