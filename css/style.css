@@ -28,13 +28,10 @@ img {
 
 /* Helper Classes  */
 
-.new::after {
-  content: "New";
-  background-color: var(--main-color);
-}
 .text-main-color {
   color: var(--main-color);
 }
+
 /* header section*/
 .navbar-brand {
   font-size: 32px;
@@ -364,6 +361,7 @@ header {
   background-position: center center;
   position: relative;
 }
+
 .trends-conrainer,
 .brands-container {
   overflow: hidden;
@@ -462,7 +460,13 @@ header {
     }
   }
 }
-
+.trand-shadow {
+  transition: all 0.3s ease-in-out;
+}
+.trand-shadow:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 /* Brands Section */
 .brands-flex {
   gap: 48px !important;
@@ -548,18 +552,92 @@ header {
 /* <!-- End Section "subscribe" --> */
 /* <!-- End  "Footer" --> */
 
-/*  Loading  */
-
+/* Start Loading */
 .loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
-  z-index: 99999;
-  background-color: var(--main-color);
-  inset: 0;
-  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #09c;
+  z-index: 99999999999;
+  display: none;
 }
+.sk-cube-grid {
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+}
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+/* End Loading */
+
 /********/
 /* Cart Section */
 /********/
@@ -911,12 +989,21 @@ hr {
   margin: 20 px;
   border-radius: 10px;
 }
+
 .input-icon i {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: #09c;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -20px;
 }
 /* <!-- End "Signin" & "Signup" --> */
 
