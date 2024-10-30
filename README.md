@@ -48,7 +48,7 @@ Throughout the project, I took the lead on several critical components to ensure
 ---
 
 ## 📧 **Contact**  
-For any inquiries or feedback, feel free to reach out to me via **[medobehairy2@gmail.com]**.  
+For any inquiries or feedback, feel free to reach out to me via **medobehairy2@gmail.com**.  
 
 ---
 
